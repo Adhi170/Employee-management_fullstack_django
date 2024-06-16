@@ -1,0 +1,55 @@
+{% extends 'employee_app/base.html' %}
+{% block context %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="home-content">
+        <h1> Employee Management Website
+        </h1>
+        <br>
+
+        <div class="overview">
+            <p>Streamline your workforce with our Employee Management system. Easily add new employees and access their information with just a click.</p>
+        </div>
+
+        <div class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Effortless employee data entry</li>
+                <li>Intuitive display of employee information</li>
+                <li>Secure and reliable data storage</li>
+                <li>Simple user interface for quick navigation</li>
+            </ul>
+        </div>
+
+        <div class="benefits">
+            <h2>Benefits</h2>
+            <ul>
+                <li>Time-saving employee management</li>
+                <li>Improved organization and data accessibility</li>
+                <li>Enhanced decision-making with comprehensive employee insights</li>
+                <li>Efficient collaboration among team members</li>
+            </ul>
+        </div>
+
+        <div class="button-container">
+            <a href="../create">
+                <button type="button">Add New Employee</button>
+            </a>
+
+            <a href="../display">
+                <button type="button">Display Employee Info</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}

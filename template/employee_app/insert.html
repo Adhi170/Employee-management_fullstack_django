@@ -1,0 +1,23 @@
+<!-- insert.html -->
+{% extends 'employee_app/base.html' %}
+{% block context %}
+{%load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body >
+<div class="insert"></div>
+<h2 >Add New Employee Information here</h2>
+
+<form method="POST">
+    {{ form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="add employee">
+    <button type="reset">Reset</button>
+    <a href="../home"><button type="button">Home</button></a>
+</form>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* ------------------- Base Styles ------------------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: black;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(160, 56, 153, 0.974) 35%, rgba(0, 212, 255, 1) 100%);
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 500px;
+  margin-bottom: 10px;
+  color: brown; 
+}
+
+a {
+  color: #13425C;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+
+button {
+  background-color: #13425C;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #F48C00;
+}
+
+/* ------------------- Home Page ------------------- */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-content {
+  padding: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.features,
+.benefits {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.insert h1{
+  text-align: center;
+}
+.insert
+{
+  align-self:center ;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #F48C00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFA500;
+}
+
+/* ------------------- Responsive Design ------------------- */
+
+
+@media (max-width: 768px) {
+  .home-buttons button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+<!-- index.html -->
+
+{% extends 'employee_app/base.html' %}
+{% block context %}
+{% load static %}
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body >
+
+
+
+<table align="center">
+    <caption><h1>Employee Details</h1></caption>
+    <thead>
+        <th>Sl.No.</th>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th>Address</th>
+        <th>Update/Delete</th>
+    </thead>
+    <tr>
+        {% for data in employee %}
+            <td align="center">{{forloop.counter}}</td>
+            <td align="center">{{data.emp_no}}</td>
+            <td>{{data.emp_name}}</td>
+            <td align="right">{{data.emp_salary}}</td>
+            <td>{{data.emp_address}}</td>
+            <td><a href="../update/{{data.id}}">Update</a> <a href="../delete/{{data.id}}">Delete</a></td>
+        </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<a href="../create"><button type="button"><h3>Add New Employee Information</h3></button></a> &nbsp &nbsp
+<a href="../home"><button type="button"><h3>Home</h3></button></a>
+
+{% endblock %}
+</body>
+</html>
+

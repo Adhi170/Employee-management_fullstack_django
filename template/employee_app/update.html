@@ -1,0 +1,23 @@
+<!-- update.html -->
+{% extends 'employee_app/base.html' %}
+{% block context %}
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body >
+
+
+
+<h1>Update Employee Details</h1>
+<form method="POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Update Employee">
+    <button type="reset" value="Reset">Reset</button>
+    <a href="../home"><button type="button">Home</button></a>
+</form>
+{% endblock %}
+</body>
+</html>
